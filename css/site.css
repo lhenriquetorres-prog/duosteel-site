@@ -74,8 +74,29 @@ dialog.lb .lb-count { position: absolute; top: 24px; left: 20px; font-size: 12px
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
 @media print { header, footer, .nav-toggle, a[aria-label] { display: none !important; } }
 
-/* floating WhatsApp: icon only on phones */
+/* WhatsApp: explicit green calls to action */
+.btn-wa {
+  background: #15803d; border-color: #15803d !important; color: #fff !important;
+  font-family: var(--font-heading); font-weight: 600; letter-spacing: 0.01em; gap: 9px;
+}
+.btn-wa:hover { background: #166534; border-color: #166534 !important; color: #fff !important; }
+.btn-wa:active { background: #14532d; }
+.btn-wa-lg { padding: 12px 22px; font-size: 15px; }
+.btn-wa svg { flex: none; }
+.wa-float {
+  display: flex; align-items: center; gap: 10px; padding: 14px 20px 14px 16px;
+  background: #15803d; color: #fff !important; text-decoration: none;
+  font-family: var(--font-heading); font-weight: 600; font-size: 17px; letter-spacing: 0.01em;
+  border-radius: 999px; box-shadow: 0 10px 28px rgba(21, 128, 61, 0.35), 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+.wa-float svg { width: 24px; height: 24px; flex: none; }
+.wa-float:hover { background: #166534; color: #fff !important; }
 @media (max-width: 640px) {
-  .wa-float { padding: 12px !important; right: 14px !important; bottom: 14px !important; border-radius: 50% 50% 50% 6px; }
-  .wa-float > span:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wa-float { right: 12px !important; bottom: 12px !important; left: 12px; justify-content: center; font-size: 16px; padding: 13px 16px; }
+  .btn-wa-lg { width: 100%; }
+  body { padding-bottom: 72px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .wa-float { animation: wa-in 0.5s ease-out 0.8s both; }
+  @keyframes wa-in { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
 }
