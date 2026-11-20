@@ -1,0 +1,81 @@
+/* page styles from the design */
+  body { margin: 0; }
+  a { color: var(--color-accent-700); text-decoration: none; }
+  a:hover { color: var(--color-accent-900); }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .faq-plus { transform: rotate(45deg); }
+  button.tag { background: transparent; border: 1px solid transparent; }
+  button.tag-outline { color: var(--color-accent-700); border-color: var(--color-accent-700); }
+  button.tag-outline:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+  button.tag-accent { background: var(--color-accent-100); border-color: var(--color-accent-300); }
+
+/* ── static-site additions ── */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+[hidden] { display: none !important; }
+.skip { position: absolute; left: -9999px; top: 8px; z-index: 100; background: var(--color-accent-900); color: var(--color-bg); padding: 10px 14px; }
+.skip:focus { left: 8px; color: var(--color-bg); }
+.hov-a100:hover { background: var(--color-accent-100); }
+.hov-a700:hover { background: var(--color-accent-700) !important; color: var(--color-bg) !important; }
+img { height: auto; }
+figure img, .blueprint img { height: 100%; }
+.zoomable { cursor: zoom-in; }
+.zoomable:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -4px; }
+button[data-filter] { min-height: 34px; }
+
+/* mobile menu */
+.nav-toggle {
+  display: none; align-items: center; justify-content: center;
+  width: 44px; height: 44px; padding: 0; background: transparent; color: var(--color-text);
+  border: 1px solid var(--color-divider); cursor: pointer;
+}
+@media (max-width: 920px) {
+  .nav-toggle { display: inline-flex; }
+  .site-nav {
+    display: none !important; width: 100%; flex-direction: column; align-items: flex-start !important;
+    gap: 16px !important; padding: 8px 0 14px; border-top: 1px solid var(--color-divider);
+  }
+  .site-nav.open { display: flex !important; }
+  .site-nav > span { padding-left: 0 !important; border-left: 0 !important; }
+  .site-nav .btn { width: 100%; }
+}
+
+/* lightbox */
+dialog.lb {
+  border: 0; padding: 0; margin: auto; width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh;
+  background: rgba(13, 20, 28, 0.94); color: #f2f2f3;
+}
+dialog.lb::backdrop { background: rgba(13, 20, 28, 0.94); }
+dialog.lb figure {
+  margin: 0; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; padding: 56px 64px 24px;
+}
+dialog.lb img { max-width: 100%; max-height: calc(100vh - 140px); width: auto; height: auto; object-fit: contain; }
+dialog.lb figcaption { font-size: 14px; color: #d8dde3; text-align: center; max-width: 70ch; margin: 0; }
+dialog.lb button {
+  position: absolute; width: 48px; height: 48px; display: grid; place-items: center;
+  background: rgba(255, 255, 255, 0.08); color: #fff; border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 26px; line-height: 1; cursor: pointer; font-family: var(--font-body);
+}
+dialog.lb button:hover { background: rgba(255, 255, 255, 0.18); }
+dialog.lb .lb-close { top: 12px; right: 12px; }
+dialog.lb .lb-prev { left: 12px; top: 50%; transform: translateY(-50%); }
+dialog.lb .lb-next { right: 12px; top: 50%; transform: translateY(-50%); }
+dialog.lb .lb-count { position: absolute; top: 24px; left: 20px; font-size: 12px; letter-spacing: 0.1em; color: #aab4bf; }
+@media (max-width: 640px) {
+  dialog.lb figure { padding: 60px 10px 80px; }
+  dialog.lb .lb-prev, dialog.lb .lb-next { top: auto; bottom: 16px; transform: none; }
+}
+
+/* form */
+.field-label { display: block; font-size: 12px; margin-bottom: 5px; color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+.input:invalid:focus-visible { border-color: #c8202b; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+@media print { header, footer, .nav-toggle, a[aria-label] { display: none !important; } }
+
+/* floating WhatsApp: icon only on phones */
+@media (max-width: 640px) {
+  .wa-float { padding: 12px !important; right: 14px !important; bottom: 14px !important; border-radius: 50% 50% 50% 6px; }
+  .wa-float > span:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
