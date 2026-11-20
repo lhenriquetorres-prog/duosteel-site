@@ -28,7 +28,7 @@
 <body data-ui='{"prev": "Foto anterior", "next": "Próxima foto", "close": "Fechar", "zoom": "Ampliar foto"}'>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <div style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh; display: flex; flex-direction: column;">
-<header style="position: sticky; top: 0; z-index: 20; background: var(--color-bg); border-bottom: 1px solid var(--color-divider);">
+<div class="topbar"><div class="topbar-in"><span>Engenharia e construção em aço · Brasil e Paraguai</span><span class="topbar-links"><a href="https://wa.me/595981587300?text=Ol%C3%A1%2C%20gostaria%20de%20construir%20mais%20r%C3%A1pido%20do%20que%20o%20m%C3%A9todo%20convencional%21" rel="noopener" target="_blank">WhatsApp PY +595 981 587300</a><a href="https://wa.me/5545991161087?text=Ol%C3%A1%2C%20gostaria%20de%20construir%20mais%20r%C3%A1pido%20do%20que%20o%20m%C3%A9todo%20convencional%21" rel="noopener" target="_blank">WhatsApp BR +55 45 99116-1087</a><a href="mailto:comercial@grupotorres.eng.br">comercial@grupotorres.eng.br</a><span class="topbar-lang"><b>PT</b><a href="../" hreflang="es" lang="es">ES</a></span></span></div></div><header style="position: sticky; top: 0; z-index: 20; background: var(--color-bg); border-bottom: 1px solid var(--color-divider);">
 <div class="nav" style="max-width: 1180px; margin: 0 auto; padding: 14px 24px; gap: 28px; flex-wrap: wrap;">
 <a href="../pt/" style="margin-right: auto; display: block; text-decoration: none; color: inherit;">
 <div style="font-family: var(--font-heading); font-size: 26px; letter-spacing: -0.02em; line-height: 1;">duosteel</div>
@@ -43,8 +43,8 @@
 <a href="../pt/processo/">Processo</a>
 <a href="../pt/vantagens/">Vantagens do aço</a>
 <a href="../pt/sobre/">Sobre</a>
-<a href="https://wa.me/595981587300?text=Ol%C3%A1%2C%20gostaria%20de%20construir%20mais%20r%C3%A1pido%20do%20que%20o%20m%C3%A9todo%20convencional%21" rel="noopener" style="display: flex; align-items: center; gap: 7px; color: var(--color-accent-700);" target="_blank"><svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+595 981 587300</a>
-<span style="display: flex; align-items: center; gap: 7px; font-size: 12px; letter-spacing: 0.06em; padding-left: 16px; border-left: 1px solid var(--color-divider);">
+<a class="nav-phone" href="https://wa.me/595981587300?text=Ol%C3%A1%2C%20gostaria%20de%20construir%20mais%20r%C3%A1pido%20do%20que%20o%20m%C3%A9todo%20convencional%21" rel="noopener" style="display: flex; align-items: center; gap: 7px; color: var(--color-accent-700);" target="_blank"><svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+595 981 587300</a>
+<span class="nav-lang" style="display: flex; align-items: center; gap: 7px; font-size: 12px; letter-spacing: 0.06em; padding-left: 16px; border-left: 1px solid var(--color-divider);">
 <span style="color: var(--color-accent-700); font-weight: 500;">PT</span>
 <span style="color: color-mix(in srgb, var(--color-text) 30%, transparent);">/</span>
 <a href="../" hreflang="es" lang="es" style="color: color-mix(in srgb, var(--color-text) 62%, transparent);">ES</a>
@@ -56,9 +56,8 @@
 <main id="conteudo" style="flex: 1;">
 
 
-<section style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center;">
-<div>
-<div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 18px;">+123 mil m² construídos · Brasil e Paraguai · desde 2016</div>
+<section class="hero"><img alt="Galpão logístico de 5.230 m² entregue pela Duosteel em Vallemí, Paraguai" class="hero-bg" decoding="async" fetchpriority="high" sizes="100vw" src="../img/banners/hero-1920.webp" srcset="../img/banners/hero-1200.webp 1200w, ../img/banners/hero-1920.webp 1920w"/><div class="hero-inner"><div class="hero-copy">
+<div class="eyebrow" style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 18px;">+123 mil m² construídos · Brasil e Paraguai · desde 2016</div>
 <h1 style="font-size: clamp(44px, 6vw, 72px); line-height: 0.98; margin: 0 0 22px;">Engenharia<br/>aplicada ao aço.</h1>
 <p style="font-size: 17px; line-height: 1.6; max-width: 46ch; margin: 0 0 28px; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Construtora especializada em estruturas: aço pesado, pré-moldado, concreto armado e light steel frame. Assumimos a obra inteira — projeto, fundação, fabricação e montagem — em contrato turn key.</p>
 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
@@ -73,13 +72,8 @@
 <span>Equipe de montagem própria</span>
 <span>ART em todas as obras</span>
 </div>
-</div>
-<figure class="blueprint" style="margin: 0; aspect-ratio: 16 / 10;">
-<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-<img alt="Conjunto entregue ao pôr do sol — Tafirel, Katueté / Paraguai" decoding="async" fetchpriority="high" height="720" sizes="(max-width: 760px) 100vw, 560px" src="../img/obras/tafirel/01.webp" srcset="../img/obras/tafirel/01-800.webp 800w, ../img/obras/tafirel/01.webp 1280w" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1280"/>
-</figure>
-</section>
-<section style="max-width: 1180px; margin: 0 auto; padding: 24px 24px 72px;">
+</div></div></section>
+<section class="stats-band" style="max-width: 1180px; margin: 0 auto; padding: 24px 24px 72px;">
 <div class="blueprint" style="display: flex; flex-wrap: wrap;">
 <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
 <div style="flex: 1 1 210px; padding: 30px 22px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--color-divider);">
@@ -104,7 +98,7 @@
 <h2 style="font-size: 34px; margin: 0 0 6px;">O que construímos</h2>
 <p class="text-muted" style="margin: 0 0 32px; font-size: 15px;">Três sistemas (aço pesado, light steel frame e pré-moldado com concreto armado) com a mesma engenharia por trás.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px;">
-<article class="card blueprint" style="padding: 28px; gap: 14px;">
+<article class="card blueprint" style="padding: 28px; gap: 14px;"><div class="card-media"><img alt="Estrutura metálica da Carlão Autorepuestos, Ciudad del Este" decoding="async" height="600" loading="lazy" src="../img/obras/carlao/01-800.webp" width="800"/></div>
 <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
 <div class="card-kicker">Sistema 01</div>
 <h3 style="margin: 0; font-size: 28px;">Aço pesado</h3>
@@ -115,7 +109,7 @@
 <li>Fabricação em perfis soldados e laminados</li>
 </ul>
 </article>
-<article class="card blueprint" style="padding: 28px; gap: 14px;">
+<article class="card blueprint" style="padding: 28px; gap: 14px;"><div class="card-media"><img alt="Estrutura em light steel frame com contraventamento" decoding="async" height="600" loading="lazy" src="../img/obras/vilaapark/06-800.webp" width="800"/></div>
 <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
 <div class="card-kicker">Sistema 02</div>
 <h3 style="margin: 0; font-size: 28px;">Light Steel Frame</h3>
@@ -126,7 +120,7 @@
 <li>Compatível com estrutura em aço pesado</li>
 </ul>
 </article>
-<article class="card blueprint" style="padding: 28px; gap: 14px;">
+<article class="card blueprint" style="padding: 28px; gap: 14px;"><div class="card-media"><img alt="Pilares pré-moldados e bloco administrativo da Tafirel, Katueté" decoding="async" height="450" loading="lazy" src="../img/obras/tafirel/05-800.webp" width="800"/></div>
 <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
 <div class="card-kicker">Sistema 03</div>
 <h3 style="margin: 0; font-size: 28px;">Pré-moldado e concreto armado</h3>
@@ -235,10 +229,10 @@
 
 </div>
 </section>
-<section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 72px;">
+<section class="clients-section" style="max-width: 1180px; margin: 0 auto; padding: 0 24px 72px;">
 <h2 style="font-size: 34px; margin: 0 0 6px;">Quem já contratou a Duosteel</h2>
 <p class="text-muted" style="margin: 0 0 28px; font-size: 15px;">Obras entregues para indústria, saúde, varejo, agro e setor público — no Brasil e no Paraguai.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0; border-top: 1px solid var(--color-divider); border-left: 1px solid var(--color-divider);">
+<div class="clients" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0; border-top: 1px solid var(--color-divider); border-left: 1px solid var(--color-divider);">
 <div style="background: var(--color-bg); padding: 20px 22px; font-family: var(--font-heading); font-size: 21px; line-height: 1.2; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider);">Hospital Unimed</div>
 <div style="background: var(--color-bg); padding: 20px 22px; font-family: var(--font-heading); font-size: 21px; line-height: 1.2; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider);">Farmácias Nissei</div>
 <div style="background: var(--color-bg); padding: 20px 22px; font-family: var(--font-heading); font-size: 21px; line-height: 1.2; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider);">Ceasa Foz do Iguaçu</div>
@@ -255,7 +249,7 @@
 </section>
 <section style="background: var(--color-accent-900); color: var(--color-bg);">
 <div style="max-width: 1180px; margin: 0 auto; padding: 64px 24px;">
-<div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; margin-bottom: 14px;">Setores atendidos</div>
+<div class="eyebrow" style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; margin-bottom: 14px;">Setores atendidos</div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent); border-left: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent);">
 <div style="background: var(--color-accent-900); padding: 26px 22px; border-right: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent);">
 <h4 style="margin: 0 0 8px; font-size: 22px;">Agro</h4>
@@ -298,7 +292,7 @@
 </table>
 </div>
 </section>
-<section style="border-top: 1px solid var(--color-divider);">
+<section class="cta-band" style=""><img alt="" class="hero-bg" decoding="async" loading="lazy" sizes="100vw" src="../img/banners/cta-1600.webp" srcset="../img/banners/cta-1000.webp 1000w, ../img/banners/cta-1600.webp 1600w"/>
 <div style="max-width: 1180px; margin: 0 auto; padding: 64px 24px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: space-between;">
 <div>
 <h2 style="font-size: 32px; margin: 0 0 6px;">Tem um projeto ou só o terreno?</h2>
