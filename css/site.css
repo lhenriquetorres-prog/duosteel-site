@@ -100,3 +100,7 @@ dialog.lb .lb-count { position: absolute; top: 24px; left: 20px; font-size: 12px
   .wa-float { animation: wa-in 0.5s ease-out 0.8s both; }
   @keyframes wa-in { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
 }
+
+/* home figures: keep each value on one line */
+.stat-val { font-size: clamp(30px, 2.9vw, 40px) !important; white-space: nowrap; }
+.stat-val span { font-size: 0.55em !important; }
