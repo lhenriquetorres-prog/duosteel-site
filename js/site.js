@@ -28,7 +28,7 @@
       });
       Array.prototype.forEach.call(cards, function (c) {
         var tags = (c.getAttribute('data-tags') || '').split('|');
-        c.hidden = !(f === 'Todos' || c.getAttribute('data-pais') === f || tags.indexOf(f) > -1);
+        c.hidden = !(f === '*' || c.getAttribute('data-pais') === f || tags.indexOf(f) > -1);
       });
     });
   });
